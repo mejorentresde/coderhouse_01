@@ -1,0 +1,246 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+$textcolor1: #319FD1;
+$textcolor2: #F4BD16;
+$bgcolor1: #319FD1;
+$bgcolor2: #F4BD16;
+
+
+
+.navbar{
+    margin-bottom: 30px;
+}
+
+
+@media only screen and (max-width: 1024px) {
+    body{
+        background-color: #319ed141;
+    }
+}   
+
+
+
+
+h1{
+    color: rgb(255, 255, 255);
+    background-color: $bgcolor1;
+    font-size: 40px;
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+    border: 0px solid rgb(255, 255, 255);
+    padding: 20px 20px 20px 20px;
+    animation-duration: 3s;
+    animation-name: aparecer;
+}
+
+
+
+h2{
+    color: rgb(255, 255, 255);
+    background-color: $bgcolor1;
+    font-size: 25px;
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+    border: 0px solid rgb(255, 255, 255);
+    padding: 20px 20px 20px 20px;
+    animation-duration: 5s;
+    animation-name: aparecer;
+}
+
+
+h3{
+    color: rgb(255, 255, 255);
+    background-color: $bgcolor1;
+    font-size: 15px;
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+    border: 0px solid rgb(255, 255, 255);
+    padding: 20px 20px 20px 20px;
+    animation-duration: 8s;
+    animation-name: aparecer;
+}
+
+
+h4{
+    color: black;
+}
+
+h5{
+    text-align: center;
+}
+
+
+
+
+.modal-body{
+    color: black;
+}
+
+
+table{
+    margin-top: 30px;
+}
+.titulotable{
+    background-color: $bgcolor1;
+}
+
+tr{
+    background-color: rgb(255, 255, 255);
+}
+
+.descripciontable:hover{
+    background-color: #319ed14f ;
+}
+
+.cursos{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: grid;
+    grid-template-columns: 400px 400px 400px;
+    grid-template-rows: 200px 200px 200px;
+    justify-items: left;
+    align-items: center;
+    background-image: linear-gradient(to left, #319ed1, #ffffff);
+    
+}
+
+
+
+.nombrescurso{
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+}
+
+
+
+.contacto{
+    list-style-type: none;
+    margin-right: 300px;
+    padding: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+
+.imagencurso{
+    transition: 2s;
+    display: block;
+    margin-left: auto;
+    margin-right: 100px;
+    
+}
+
+
+
+.imagencurso:hover{
+transform: scale(2);
+}
+
+
+@keyframes aparecer {
+    0% {
+        opacity: 0;
+        background-color: rgb(255, 255, 255);
+    }
+    100% {
+        opacity: 1;
+        background-color: $bgcolor1;
+    }
+}
+
+.color1{
+    background-color: blue;
+}
+
+.color2{
+    background-color: blueviolet;
+}
+
+
+.dropdown{
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    background-color: $bgcolor2;
+    padding: 10px;
+}
+
+.horas{
+    text-align: center;
+    margin-bottom: 30px;
+    background-color: $bgcolor2;
+    padding: 10px;
+}
+
+
+.acontacto{
+    text-align: center;
+    margin-bottom: 30px;
+    background-color: #343a40;
+    padding: 80px;
+}
+
+#mejor{
+    color: $textcolor2;
+    font-size: 20px;
+}
+
+#arquitecto{
+    color:white;
+}
+
+
+#demo{
+    text-align: center;
+    margin-bottom: 30px;
+    background-color: $bgcolor1;
+    width: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+footer{
+    background-color: black;
+    margin-top: 30px;
+}
+
+#carouselExampleControls{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 60%;
+    height: 60%;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+
+.flex-container{
+    display: flex;
+    background: $bgcolor1;
+    padding: 20px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 30px;
+
+}
+
+.caja{
+    border: 1px solid rgb(158, 158, 158);
+    background-color: white;
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    width: 500px;
+    height: 500px;
+    line-height: 120px;
+    text-align: center;
+    margin: 5px;
+
+}
