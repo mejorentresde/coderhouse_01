@@ -8,12 +8,26 @@ $textcolor2: #F4BD16;
 $bgcolor1: #319FD1;
 $bgcolor2: #F4BD16;
 
-
+.imgprincipal{
+    display: block;
+    text-align: center
+}
 
 .navbar{
     margin-bottom: 30px;
+    height: 60px;
 }
 
+.nmcursos{
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 30px;
+}
 
 @media only screen and (max-width: 1024px) {
     body{
@@ -21,35 +35,32 @@ $bgcolor2: #F4BD16;
     }
 }   
 
-
-
-
-h1{
-    color: rgb(255, 255, 255);
-    background-color: $bgcolor1;
-    font-size: 40px;
-    text-align: left;
-    font-family: Arial, Helvetica, sans-serif;
-    border: 0px solid rgb(255, 255, 255);
-    padding: 20px 20px 20px 20px;
-    animation-duration: 3s;
-    animation-name: aparecer;
+.principal_titulo_0{
+    margin: 70px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    
 }
 
-
+h1{
+    color: $textcolor1;
+    font-family:  'Alfa Slab One', cursive;
+    text-align: center;
+    padding: 10px;
+}
 
 h2{
     color: rgb(255, 255, 255);
     background-color: $bgcolor1;
-    font-size: 25px;
+    font-size: 20px;
     text-align: left;
     font-family: Arial, Helvetica, sans-serif;
     border: 0px solid rgb(255, 255, 255);
     padding: 20px 20px 20px 20px;
     animation-duration: 5s;
     animation-name: aparecer;
+    margin: 20px;
 }
-
 
 h3{
     color: rgb(255, 255, 255);
@@ -63,36 +74,19 @@ h3{
     animation-name: aparecer;
 }
 
-
 h4{
     color: black;
 }
 
 h5{
     text-align: center;
+    color: $textcolor1;
+    font-family:  'Alfa Slab One', cursive;
+    margin: 30px;
 }
-
-
-
 
 .modal-body{
     color: black;
-}
-
-
-table{
-    margin-top: 30px;
-}
-.titulotable{
-    background-color: $bgcolor1;
-}
-
-tr{
-    background-color: rgb(255, 255, 255);
-}
-
-.descripciontable:hover{
-    background-color: #319ed14f ;
 }
 
 .cursos{
@@ -102,18 +96,12 @@ tr{
     grid-template-rows: 200px 200px 200px;
     justify-items: left;
     align-items: center;
-    background-image: linear-gradient(to left, #319ed1, #ffffff);
-    
 }
-
-
 
 .nombrescurso{
     font-family: 'Roboto', sans-serif;
     text-transform: uppercase;
 }
-
-
 
 .contacto{
     list-style-type: none;
@@ -122,22 +110,16 @@ tr{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-
-
 .imagencurso{
     transition: 2s;
     display: block;
     margin-left: auto;
     margin-right: 100px;
-    
 }
-
-
 
 .imagencurso:hover{
 transform: scale(2);
 }
-
 
 @keyframes aparecer {
     0% {
@@ -158,13 +140,13 @@ transform: scale(2);
     background-color: blueviolet;
 }
 
-
 .dropdown{
     text-align: center;
-    margin-top: 30px;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     background-color: $bgcolor2;
     padding: 10px;
+    margin-left: 500px;
+    margin-right: 500px;
 }
 
 .horas{
@@ -173,7 +155,6 @@ transform: scale(2);
     background-color: $bgcolor2;
     padding: 10px;
 }
-
 
 .acontacto{
     text-align: center;
@@ -191,7 +172,6 @@ transform: scale(2);
     color:white;
 }
 
-
 #demo{
     text-align: center;
     margin-bottom: 30px;
@@ -203,24 +183,29 @@ transform: scale(2);
 }
 
 footer{
-    background-color: black;
     margin-top: 30px;
 }
 
 #carouselExampleControls{
     margin-top: 30px;
-    margin-bottom: 30px;
-    width: 60%;
-    height: 60%;
+    margin-bottom: 20px;
+    width: 70%;
+    height: auto;
     margin-left: auto;
     margin-right: auto;
-
 }
 
+#carouselExampleControls1{
+    margin-top: 30px;
+    margin-bottom: 20px;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
 
 .flex-container{
     display: flex;
-    background: $bgcolor1;
+    background: white;
     padding: 20px;
     display: flex;
     flex-flow: row wrap;
@@ -228,7 +213,6 @@ footer{
     width: 100%;
     margin: 0 auto;
     margin-top: 30px;
-
 }
 
 .caja{
@@ -242,5 +226,26 @@ footer{
     line-height: 120px;
     text-align: center;
     margin: 5px;
+}
 
+form{
+    background-color: white;
+    margin: 60px;
+    .mb-3{
+        color: #319ed1; 
+    }
+    .form-check{
+        margin: 20px;
+        margin-left: 0px;
+    }
+    .form-label{
+        color: #319ed1;
+    }
+    .form-check{
+        color: #319ed1;
+    }
+}
+
+.canalyoutube{
+    margin: 30px;
 }
