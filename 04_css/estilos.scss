@@ -15,8 +15,11 @@ $bgcolor2: #F4BD16;
 
 .navbar{
     margin-bottom: 30px;
-    height: 60px;
-}
+    height: 100px;
+    .nav-link{
+        color: $textcolor1 !important;
+    }
+    }
 
 .nmcursos{
     display: flex;
@@ -36,9 +39,11 @@ $bgcolor2: #F4BD16;
 }   
 
 .principal_titulo_0{
-    margin: 70px;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    font-family:  'Alfa Slab One', cursive;
+    margin: 10px;
+    margin-top: 10px;
+    font-size: 35px;
+    color: $textcolor1;
     
 }
 
@@ -49,41 +54,24 @@ h1{
     padding: 10px;
 }
 
+.carousel-inner{
+    margin-bottom: 50px;
+}
+
 h2{
-    color: rgb(255, 255, 255);
-    background-color: $bgcolor1;
-    font-size: 20px;
-    text-align: left;
-    font-family: Arial, Helvetica, sans-serif;
-    border: 0px solid rgb(255, 255, 255);
-    padding: 20px 20px 20px 20px;
-    animation-duration: 5s;
-    animation-name: aparecer;
-    margin: 20px;
-}
-
-h3{
-    color: rgb(255, 255, 255);
-    background-color: $bgcolor1;
-    font-size: 15px;
-    text-align: left;
-    font-family: Arial, Helvetica, sans-serif;
-    border: 0px solid rgb(255, 255, 255);
-    padding: 20px 20px 20px 20px;
-    animation-duration: 8s;
-    animation-name: aparecer;
-}
-
-h4{
-    color: black;
-}
-
-h5{
     text-align: center;
     color: $textcolor1;
     font-family:  'Alfa Slab One', cursive;
     margin: 30px;
 }
+
+h5{
+        text-align: center;
+        color: $textcolor1 !important;
+        font-family:  'Alfa Slab One', cursive !important;
+        margin: 30px;
+    }
+
 
 .modal-body{
     color: black;
@@ -112,13 +100,10 @@ h5{
 
 .imagencurso{
     transition: 2s;
-    display: block;
-    margin-left: auto;
-    margin-right: 100px;
 }
 
 .imagencurso:hover{
-transform: scale(2);
+transform: scale(1.1);
 }
 
 @keyframes aparecer {
@@ -132,21 +117,14 @@ transform: scale(2);
     }
 }
 
-.color1{
-    background-color: blue;
-}
-
-.color2{
-    background-color: blueviolet;
-}
-
 .dropdown{
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
+    margin-top: 50px;
     background-color: $bgcolor2;
     padding: 10px;
-    margin-left: 500px;
-    margin-right: 500px;
+    margin-left: 100px;
+    margin-right: 100px;
 }
 
 .horas{
@@ -160,7 +138,7 @@ transform: scale(2);
     text-align: center;
     margin-bottom: 30px;
     background-color: #343a40;
-    padding: 80px;
+    padding: 20px;
 }
 
 #mejor{
@@ -215,6 +193,30 @@ footer{
     margin-top: 30px;
 }
 
+.flex-container2{
+    display: flex;
+    background: white;
+    padding: 20px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+.textocurso{
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+
+.iracurso{
+
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
 .caja{
     border: 1px solid rgb(158, 158, 158);
     background-color: white;
@@ -226,7 +228,15 @@ footer{
     line-height: 120px;
     text-align: center;
     margin: 5px;
+    transition: all 300ms;
+    position: relative;
 }
+
+.caja:hover{
+    transform: scale(1.05);
+    background: $bgcolor1;
+}
+
 
 form{
     background-color: white;
@@ -248,4 +258,8 @@ form{
 
 .canalyoutube{
     margin: 30px;
+}
+
+.boton01{
+    background-color: blue;
 }
